@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size:18px;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline hsl(210, 10%, 33%);
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+   /* font-size: 0.8rem;*/
+    line-height: 1.5em;
+}
+
+h2, h3, h4{
+    color:hsl(210, 10%, 33%);
+}
+
+h5{
+    color:hsl(210, 10%, 33%);
+    font-weight: 400;
+}
+
+.logo{
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding:30px;
+}
+
+.header{
+    display: grid;
+    place-items: center;
+    margin-bottom: 80px;
+}
+
+h3, .header h2{
+    text-align: center;
+}
+
+.btn{
+    color:white;
+    border:none;
+    border-radius: 50px;
+    padding:8px 35px;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.btn-ios{
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn-mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+.clipboard{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+
+.workflow{
+    display: grid;
+    place-items: center;
+}
+
+.workflow-details article{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:1180px){
+    h5{
+        padding-bottom: 15px;
+    }
+    .header p{
+        text-align: center;
+        width:35%;
+        padding-top: 10px;
+    }
+
+    .btn-ios{
+        margin-right: 1em;
+    }
+
+    .snippets > p{
+        margin:0 auto;
+        text-align: center;
+        width:50%;
+        padding-top: 20px;
+    }
+
+    .snippets-info{
+        display: flex;
+        margin-top: 50px;
+        padding:20px;
+    }
+
+    .snippets-details{
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+    .snippets-details h4{
+        padding-bottom: 10px;
+    }
+
+    .snippets-details p{
+        padding-bottom: 20px;
+        width:70%;
+    }
+
+    .clipboard p{
+        text-align: center;
+        width:35%;
+        margin-top: 20px;
+    }
+
+    .clipboard img{
+        margin: 50px 0 20px;
+    }
+
+    .workflow p, .workflow h4{
+        padding-top: 20px;
+    }
+
+    .workflow-details{
+        display: flex;
+        padding-top: 30px;
+        margin-right: 120px;
+    }
+
+    .workflow-details article p{
+        text-align: center;
+        width:70%;
+    }
+
+    .space{
+        margin-right: 80px;
+    }
+
+    .workflow-logos{
+        margin: 90px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: hsl(0, 0%, 96%);
+        margin-top:90px;
+        padding:20px;
+    }
+
+    .footer-logos{
+        padding:50px 0 0 90px;
+    }
+
+    .space-btw{
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:1175px) and (min-width:501px){
+    .clipboard img, .snippets-info img{
+        height:300px;
+    }  
+    p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .snippets h3, .snippets h4{
+        margin-left: 20%;
+    }
+   h3,h4{
+        text-align: center;
+        width: 60%;
+        font-size: 1.6rem;
+        margin-top: 50px;
+    }
+    .header p{
+        width:60%;
+    }
+    .snippets-info{
+        display: grid;
+        place-items: center;
+        margin:0 auto;
+        margin-top: 50px;
+    }
+    .snippets p{
+        max-width: 60%;
+        margin-left: 20%;
+    }
+     .clipboard p, .workflow p{
+        width:50%;
+        margin-bottom: 20px;
+    }
+    .workflow-logos img{
+        display: block;
+        margin:40px;
+    }
+    .btn-container{
+        display: grid;
+    }
+    .btn-ios{
+        margin-bottom: 1em;
+    }
+    .footer{
+        display: grid;
+        place-items: center;
+        background-color: hsl(0, 0%, 96%);
+        margin-top:90px;
+        padding:20px;
+    }
+    .footer  > img{
+        padding-bottom: 30px;
+    }
+    .footer h5{
+        text-align: center;
+        margin:0 auto;
+        padding-bottom: 10px;
+    }
+    .space-btw{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .header{
+        margin-bottom: 40px;
+    }
+    p{
+        text-align: center;
+        margin-top: 50px;
+        width:90%;
+        margin:0 auto;
+        font-size: 1rem;
+    }
+    .snippets > h3{
+        margin:0 auto;
+        text-align: center;
+        width:50%;
+        padding-top: 20px;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        width:85%;
+    }
+   h3{
+        text-align: center;
+        width: 60%;
+        font-size: 1.3rem;
+        margin-top: 50px;
+    }
+    h4{
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+    .snippets-info{
+        display: grid;
+        place-items: center;
+    }
+    .clipboard img, .snippets-info img{
+        height:200px;
+        margin-top: 30px;
+    }  
+    .btn-container{
+        display: grid;
+    }
+    .btn-ios{
+        margin-bottom: 1em;
+    }
+    .workflow-logos img{
+        display: block;
+        margin:40px;
+    }
+    .footer{
+        display: grid;
+        place-items: center;
+        background-color: hsl(0, 0%, 96%);
+        margin-top:90px;
+        padding:20px;
+    }
+    .footer  > img{
+        padding-bottom: 30px;
+    }
+    .footer h5{
+        text-align: center;
+        margin:0 auto;
+        padding-bottom: 15px;
+    }
+    .space-btw{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:320px){
+     h2{
+        font-size: 1.6rem;
+    }
+    .snippets-info{
+        display: grid;
+        place-items: center;
+    }
+}
